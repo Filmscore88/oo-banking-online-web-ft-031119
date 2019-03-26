@@ -14,8 +14,8 @@ def valid?
 end 
 
 def execute_transaction 
-  if !@sender.valid?
-   "Transaction rejected. Please check your account balance."
+  if @sender.valid?
+  puts "Transaction rejected. Please check your account balance."
       elsif  @status == "pending" 
         @sender.balance -= @amount 
         @receiver.balance += @amount
