@@ -25,4 +25,9 @@ def execute_transaction
       end 
   end 
 end 
+
+def reverse_transfer 
+  
+
+
 end
